@@ -241,36 +241,3 @@
 .ish-layout-align-self-stretch {
   @include align-self(stretch);
 }
-
-
-//
-// Debugging
-.ish-layout-debug {
-
-	$debug-space: .2em;
-	$debug-opacity: .8;
-	$debug-border: 1px dashed black;
-
-	margin: $debug-space;
-	border: $debug-border;
-	@include opacity($debug-opacity);
-
-	> * {
-		margin: $debug-space;
-		border: $debug-border;
-		@include opacity($debug-opacity);
-	}
-
-  .ish-layout {
-		margin: $debug-space;
-		border: $debug-border;
-		@include opacity($debug-opacity);
-
-		> * {
-			margin: $debug-space;
-			@include opacity($debug-opacity);
-		}
-
-  }
-
-}

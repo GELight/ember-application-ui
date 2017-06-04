@@ -17,6 +17,22 @@ module.exports = function(environment) {
       }
     },
 
+    i18n: {
+      defaultLocale: 'de'
+    },
+
+    googleFonts: [
+      'Open+Sans:300,400,700',
+      'Gudea:100,400,700',
+      'Homemade+Apple:100,400,700'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
+    },
+    
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
